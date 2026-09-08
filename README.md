@@ -224,6 +224,10 @@ Linear Classifier → Softmax → Binary Prediction (0=True, 1=Fake)
 - FakeNewsNet dataset creators
 - BERT authors (Devlin et al., 2019)
 
+## Report
+
+- [Fake News Detection using BERT - Project Report](https://drive.google.com/drive/folders/1VM4DnqmL4vKaZ_YYBooe-ooOF8WDAL_v?usp=drive_link)
+
 ## Contact
 
 For questions or issues, please open an issue on the repository or contact nvshanmukh28@gmail.com.
