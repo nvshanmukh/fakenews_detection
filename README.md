@@ -110,19 +110,20 @@ BERT_MODEL_NAME = 'bert-base-uncased'
 
 ## Usage
 
-### Basic Execution
+### Model Training & Evaluation
 
+The full training pipeline, evaluation, and SHAP explainability analysis are available in the Jupyter Notebook:
 ```bash
-python fake_news_detection.py
+jupyter notebook model.ipynb
 ```
 
-The script will automatically:
-1. Load and preprocess datasets
-2. Train the BERT classifier
-3. Evaluate performance
-4. Generate SHAP explanations
-5. Test on alternative datasets (if available)
-6. Retrain for improved robustness
+### Running the API Server
+
+Start the FastAPI REST backend to serve predictions:
+```bash
+uvicorn app:app --host 0.0.0.0 --port 8000
+```
+The API will be available at `http://localhost:8000/predict` and interactive docs at `http://localhost:8000/docs`.
 
 ### GPU Acceleration
 
